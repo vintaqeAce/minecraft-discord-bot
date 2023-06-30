@@ -1,8 +1,8 @@
 const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName('botinfo')
-    .setDescription('Sends the CPU, Memory Stats of the Bot.')
+    .setName('info')
+    .setDescription('Developer statistics, for ace.')
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
   run: async ({ interaction, client }) => {
     interaction.deferReply({
